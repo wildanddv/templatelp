@@ -28,7 +28,9 @@ ul {
 
 /*HEADER*/
 .header-1 {
-
+    display: block;
+    width: 200px;
+    padding: 10px;
 }
 
 .header-2 {
@@ -40,6 +42,9 @@ ul {
 }
 
 .header-3 {
-
+    display: block;
+    width: 200px;
+    padding: 10px;
+    align-items: flex-end;
 }
 </style>

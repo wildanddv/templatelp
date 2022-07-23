@@ -1,0 +1,49 @@
+.wrapper {
+max-width: 600px;
+margin:0 auto;
+padding :0 10px;
+background-color: blueviolet;
+}
+
+/* pengaturan header */
+header{
+  display: flex;
+  width: 100%;
+}
+
+/* bagian gambar*/
+ .wrapper img {
+  margin-top: 20px;
+  max-width: 100%;
+  height: auto;
+  display: block;  
+} 
+
+ .logo{
+  display: block;
+  width: 200px;
+  padding: 10px;
+  margin-left: auto;
+  margin-right: auto;
+} 
+
+/*gambar sebelah kiri*/
+.logokiri{
+  float:left;
+  display:block;
+  width:200px;
+}
+/*gambar sebelah kanan*/
+.logokanan{
+  float:right;
+  display:block;
+  width:200px;
+}
+
+/*mengatur style tulisan*/
+.hero {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    padding-top: 30px;
+    text-align: center;
+}

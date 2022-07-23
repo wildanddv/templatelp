@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #fcfcfc;
+}
+
+.wrapper{
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0 10px;
+    background-color:  #F0F8FF;
+    border-radius: 10px;
+}
+
+footer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    /*background: #111;
+    height: auto;
+    width: 100%; */
+    font-family: "Open Sans";
+    padding-top: 40px;
+    color: #111;
+    
+}
+
+.icon-box{
+    display: inline-block;
+    border-radius: 10px;
+    padding: 20px;margin: 15px;
+    border: 1px solid #e8e5f0;
+}
+
+.icon-box2{
+    display: inline-block;
+    border-radius: 10px;
+    padding: 20px;margin: 15px;
+    border: 1px solid #e8e5f0;
+}
+
+.icon-box h3{
+    color: black;
+}
+
+.icon-box2 h3{
+    color: black;
+}
+
+.icon-box p{
+    color: black;
+}
+
+.icon-box2 p{
+    color: black;
+}
+
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer-content h3{
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+    color: black;
+}
+
+.footer-content p{
+    max-width: 600px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+    color: black;
+}
+
+.socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+
+.socials li{
+    margin: 0 10px;
+}
+
+.socials a{
+    text-decoration: none;
+    color: black;
+}
+
+.socials a i{
+    font-size: 1.1rem;
+    transition: color .4s ease;
+}
+
+.socials a:hover i{
+    color: aqua;
+}
+
+.footer-bottom{
+    background: #000;
+    width: 100vw;
+    padding: 20px 0;
+    text-align: center;
+    max-width: 600px;
+    
+}
+
+.footer-bottom p{
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+    color: white;
+}
+
+.footer-bottom span{
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200;
+}

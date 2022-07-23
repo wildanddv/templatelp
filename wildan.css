@@ -1,8 +1,9 @@
+body {
+    background-color: azure;
+}
+
 .wrapper-wildan {
     max-width: 600px;
     margin: 0 auto;
     background-color: white;
-}
-body {
-    background-color: azure;
 }

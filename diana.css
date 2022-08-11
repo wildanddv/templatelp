@@ -1,49 +1,810 @@
+*{
+    box-sizing: border-box;
+}
+
+/* Tampilan untuk badan*/
 .wrapper {
 max-width: 600px;
 margin:0 auto;
 padding :0 10px;
-background-color: blueviolet;
+background-color: #abc4ff;
 }
 
 /* pengaturan header */
 header{
-  display: flex;
-  width: 100%;
+display: flex;
+width: 100%;
 }
 
 /* bagian gambar*/
- .wrapper img {
-  margin-top: 20px;
-  max-width: 100%;
-  height: auto;
-  display: block;  
+.wrapper img {
+margin-top: 20px;
+max-width: 100%;
+height: auto;
+display: block;  
 } 
-
- .logo{
-  display: block;
-  width: 200px;
-  padding: 10px;
-  margin-left: auto;
-  margin-right: auto;
+.logo{
+display: block;
+width: 200px;
+padding: 10px;
+margin-left: auto;
+margin-right: auto;
+;
 } 
 
 /*gambar sebelah kiri*/
 .logokiri{
-  float:left;
-  display:block;
-  width:200px;
+float:left;
+display:block;
+width:200px;
+left:10px;
 }
 /*gambar sebelah kanan*/
 .logokanan{
-  float:right;
-  display:block;
-  width:200px;
+float:right;
+display:block;
+width:200px;
 }
 
 /*mengatur style tulisan*/
 .hero {
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 20px;
-    padding-top: 30px;
+font-family: 'Times New Roman', Times, serif;
+font-size: 20px;
+padding-top: 30px;
+text-align: center;
+}
+/*Membuat Tombol Button*/
+.button {
+border: none;
+color: white;
+padding: 15px 32px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 14px;
+margin: 4px 2px;
+cursor: pointer;
+background-color: #4CAF50;
+}
+.borderone {
+border-style: solid;
+border-color: red;
+width:600px;
+}
+.btn {
+border: 2px solid black;
+background-color: white;
+color: black;
+padding: 14px 28px;
+font-size: 16px;
+cursor: pointer;
+}
+.success {
+border-color: #04AA6D;
+color: green;
+}
+
+.success:hover {
+background-color: #04AA6D;
+color: white;
+}
+/*Membuat kolom card*/
+.container {
+padding: 0;
+margin: auto;
+display: grid;
+grid-template-columns: repeat(8,1fr);
+margin: 5px 15px;
+gap:20px;
+position: relative;
+}
+/*Mengatur style kartu*/
+.card {
+width: 100%;
+height: auto;
+grid-column: span 8;
+margin: 10px 0;
+border-radius: 15px;
+position: relative;
+box-shadow: 0 10px 10px rgba(0,0,0,.1);
+}
+
+.head-card img {
+width: 200px;
+height: auto;
+object-fit: cover;
+}
+
+.body-card {
+padding: 10px 15px;
+text-align: center;
+}
+
+.body-card h1 {
+margin: 0;  
+
+}
+
+.body-card svg {
+width: 31px;
+position: absolute;
+bottom: 7px;
+right: 20px;
+}
+
+/* Menagtur kolom Style produk*/
+.list-produk{
+border: 1px solid gainsboro;
+padding: 10px;
+float: left;
+width: 200px;
+margin: 5px;
+}
+
+.list-produk:hover{
+transition-duration: 700ms;
+box-shadow: 5px 5px gainsboro;
+}
+
+.list-produk img{
+width: 100%;
+height: 175px;
+display: block;
+margin-bottom: 5px;
+}
+
+.list-produk h4, .list-produk h5{
+color: crimson;
+text-align: center;
+margin-bottom: 5px;
+}
+
+.tombol{
+text-decoration: none;
+border-radius: 7px;
+padding: 7px;
+display: block;
+width: 45%;
+margin: 4px;
+text-align: center;
+color: white;
+}
+
+.tombol:hover{
+background-color: black;
+transition-duration: 700ms;
+}
+
+.tombol-detail{
+background-color: green;
+}
+
+.tombol-beli{
+margin-left: auto;
+margin-right: auto;  
+background-color: crimson;
+}
+
+.testimonials{
+padding: 40px 0;
+background: #abc4ff;
+color: #434343;
+text-align:center;
+}
+
+.inner{
+max-width: 600px;
+margin:auto;
+overflow: hideen;
+padding: 0 20px;
+}
+
+.border{
+width: 180px;
+height: 5px;
+background: #6ab04c;
+margin: 26px auto;
+}
+
+.row{
+display: flex;
+flex-wrap: wrap;
+justify-content: center;  
+}
+
+.col{
+flex: 100px;
+max-width: 300px;
+box-sizing: border-box;
+padding : 10px;
+}
+
+/* Membuat page Testimonial*/
+.testimonial{
+background: #fff;
+padding: 40px;
+}
+
+/* Pengaturan Gambar untuk testimoni*/
+.testimonial img{
+width: 150px;
+height:100px;
+justify-content: center;
+border-radius:  50%; 
+}
+
+/* Pengaturan nama untuk testimoni*/
+.name{
+font-size: 20px;
+text-transform: uppercase;
+margin: 20px 0;
+}
+
+/* Pengaturan Pemberian Bintang untuk testimoni*/
+.stars{
+color: #6ab04c;
+margin-bottom: 20px;
+}
+
+.content-slide{
+max-width: 1000px;
+position: relative;
+margin:auto;
+}
+
+.imgslide{
+display: block;
+}
+
+img {
+vertical-align: middle ;
+width: 80%;
+height: 100px;
+margin-left: auto;
+margin-right: auto;
+}
+
+.prev,
+.next {
+cursor: pointer;
+position: absolute;
+top: 40%;
+width: auto;
+padding: 16px;
+color: rgb(255, 254, 224);
+font-weight:  bold;
+font-size: 18px;
+transition: 0.6s ease;
+border-radius:  0 3px 3px 0;
+user-select: none;
+background-color: rgba(0, 0, 0, 0);
+}
+
+.next{
+right:0;
+border-radius:  3px 0 0 3px;
+}
+
+.pre:hover,
+.next:hover{
+background-color: rgba(255, 255, 255,0.8);
+color: rgb(0,0,0);
+}
+
+.text{
+color: black;
+font-size: 20px;
+padding: 10px;
+position: absolute;
+bottom: 0;
+width: 100%;
+text-align:left;
+}
+
+
+
+/*Membuat TimeLine*/
+.timeline{
+max-width: 1080px;
+margin: 50px auto;
+padding: 0 20px;
+position: relative;
+}
+
+.timeline .center-line{
+position: absolute;
+height: 100%;
+width: 4px;
+background: #fff;
+left: 50%;
+top: 20px;
+transform: translateX(-50%);
+}
+
+.timeline .row{
+display: flex;
+}
+
+.timeline .row-1{
+justify-content: flex-start;
+}
+
+.timeline .row-2{
+justify-content: flex-end;
+}
+
+.timeline .row section{
+background: #fff;
+border-radius: 5px;
+width: calc(50% - 40px);
+padding: 20px;
+position: relative;
+}
+
+.timeline .row section::before{
+position: absolute;
+content: "";
+height: 15px;
+width: 15px;
+background: #fff;
+top: 28px;
+z-index: -1;
+transform: rotate(45deg);
+}
+
+.row-1 section::before{
+right: -7px;
+}
+
+.row-2 section::before{
+left: -7px;
+}
+
+.row section .icon,
+.center-line .scroll-icon{
+position: absolute;
+background: #f2f2f2;
+height: 40px;
+width: 40px;
+text-align: center;
+line-height: 40px;
+border-radius: 50%;
+color: #ff7979;
+font-size: 17px;
+box-shadow: 0 0 0 4px #fff, inset 0 2px 0 rgba(0,0,0,0.08), 0 3px 0 4px rgba(0,0,0,0.05);
+}
+
+.center-line .scroll-icon{
+bottom: 0px;
+left: 50%;
+font-size: 25px;
+transform: translateX(-50%);
+}
+
+.row-1 section .icon{
+top: 15px;
+right: -60px;
+}
+
+.row-2 section .icon{
+top: 15px;
+left: -60px;
+}
+
+.row section .details,
+.row section .bottom{
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+
+.row section .details .title{
+font-size: 22px;
+font-weight: 600;
+}
+
+.row section p{
+margin: 10px 0 17px 0;
+}
+
+.row section .bottom a{
+text-decoration: none;
+background: #ff7979;
+color: #fff;
+padding: 7px 15px;
+border-radius: 5px;
+/* font-size: 17px; */
+font-weight: 400;
+transition: all 0.3s ease;
+}
+
+.row section .bottom a:hover{
+transform: scale(0.97);
+}
+@media(max-width: 790px){
+.timeline .center-line{
+left: 40px;
+}
+.timeline .row{
+margin: 30px 0 3px 60px;
+}
+.timeline .row section{
+width: 100%;
+}
+.row-1 section::before{
+left: -7px;
+}
+.row-1 section .icon{
+left: -60px;
+}
+}
+
+@media(max-width: 440px){
+.timeline .center-line,
+.row section::before,
+.row section .icon{
+display: none;
+}
+.timeline .row{
+margin: 10px 0;
+}
+}
+/*Membuat Price Label*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+.pricing{
+max-width: 1090px;
+width: 100%;
+margin: auto;
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+}
+
+.pricing .table{
+background: #fff;
+width: calc(33% - 20px);
+padding: 30px 30px;
+position: relative;
+box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+}
+
+.table .price-section{
+display:flex;
+justify-content: center;
+}
+
+.table .price-area{
+height: 100px;
+width: 100px;
+border-radius: 50%;
+padding: 2px;
+}
+
+.price-area .inner-area{
+height: 100%;
+width: 100%;
+border-radius: 50%;
+border: 5px solid #fff;
+line-height: 117px;
+text-align: center;
+color: #fff;
+position: relative;
+}
+
+.price-area .inner-area .text{
+font-weight: 400;
+position: absolute;
+top: -10px;
+left: 10px;
+}
+
+.price-area .inner-area .price{
+font-size: 45px;
+font-weight: 500;
+margin-left: 10px;
+}
+
+.table .package-name{
+width: 100%;
+height: 2px;
+margin: 35px 0;
+position: relative;
+}
+
+.table .package-name::before{
+position: absolute;
+top: 50%;
+left: 50%;
+font-size: 20px;
+font-weight: 500;
+background: #fff;
+padding: 0 15px;
+transform: translate(-50%, -50%);
+}
+
+.table .features li{
+margin-bottom:5px;
+list-style: none;
+display: flex;
+justify-content: space-between;
+}
+
+.features li .list-name{
+font-size: 13px;
+font-weight: 200;
+}
+
+.features li .icon{
+font-size: 10px;
+}
+
+.features li .icon.check{
+color: #2db94d;
+}
+
+.features li .icon.cross{
+color: #cd3241;
+}
+
+.table .btn{
+width: 100%;
+display: flex;
+margin-top: 5px;
+justify-content: center;
+}
+
+.table .btn button{
+width: 80%;
+height: 50px;
+color: #fff;
+font-size: 20px;
+font-weight: 500;
+border: none;
+outline: none;
+border-radius: 25px;
+cursor: pointer;
+transition: all 0.3s ease;
+}
+
+.table .btn button:hover{
+border-radius: 5px;
+}
+
+.basic .features li::selection{
+background: #ffd861;
+}
+
+.basic ::selection,
+.basic .price-area,
+.basic .inner-area{
+background: #ffd861;
+}
+
+.basic .btn button{
+border: 2px solid #ffd861;
+background: #fff;
+color: #ffd861;
+}
+
+.basic .btn button:hover{
+background: #ffd861;
+color: #fff;
+}
+
+.premium ::selection,
+.premium .price-area,
+.premium .inner-area,
+.premium .btn button{
+background: #a26bfa;
+}
+
+.premium .btn button:hover{
+background: #833af8;
+}
+
+.ultimate ::selection,
+.ultimate .price-area,
+.ultimate .inner-area{
+background: #43ef8b;
+}
+
+.ultimate .btn button{
+border: 2px solid #43ef8b;
+color: #43ef8b;
+background: #fff;
+}
+
+.ultimate .btn button:hover{
+background: #43ef8b;
+color: #fff;
+}
+
+.basic .package-name{
+background: #ffecb3;
+}
+
+.premium .package-name{
+background: #d0b3ff;
+}
+
+.ultimate .package-name{
+background: #baf8d4;
+}
+
+.basic .package-name::before{
+content: "Basic";
+}
+
+.premium .package-name::before{
+content: "Premium";
+font-size: 24px;
+}
+
+.ultimate .package-name::before{
+content: "Ultimate";
+font-size: 24px;
+}
+
+@media (max-width: 600px) {
+.pricing .table{
+width: calc(50% - 20px);
+margin-bottom: 40px;
+}
+}
+@media (max-width: 600px) {
+.pricing .table{
+width: 100%;
+}
+}
+
+::selection{
+color: #fff;
+}
+
+.table .ribbon{
+width: 150px;
+height: 150px;
+position: absolute;
+top: -10px;
+left: -10px;
+overflow: hidden;
+}
+
+.table .ribbon::before,
+.table .ribbon::after{
+position: absolute;
+content: "";
+z-index: -1;
+display: block;
+border: 7px solid #4606ac;
+border-top-color: transparent;
+border-left-color: transparent;
+}
+
+.table .ribbon::before{
+top: 0px;
+right: 15px;
+}
+
+.table .ribbon::after{
+bottom: 15px;
+left: 0px;
+}
+
+.table .ribbon span{
+position: absolute;
+top: 30px;
+right: 0;
+transform: rotate(-45deg);
+width: 200px;
+background: #a26bfa;
+padding: 10px 0;
+color: #fff;
+text-align: center;
+font-size: 17px;
+text-transform: uppercase;
+box-shadow: 0 5px 10px rgba(0,0,0,0.12);
+}
+.center{
+max-width: 600px;
+position: absolute;
+transform: translate(-50%, -50%);
+height: 100px;
+width: 200px;
+box-shadow: 0px 5px 8px rgba(0,0,0,.3);
+overflow: hidden;
+}
+.images{
+height: 100px;
+width: 100px;
+display: flex;
+position: absolute;
+}
+.images img{
+width: 100%;
+height: 100%;
+}
+.images .slide{
+width: 20%;
+transition: .6s;
+}
+.buttons{
+position: absolute;
+bottom: 20px;
+left: 50%;
+transform: translateX(-50%);
+display: flex;
+}
+.buttons a{
+height: 8px;
+width: 30px;
+border: 2px solid white;
+margin: 0 5px;
+border-radius: 10px;
+}
+a.active{
+transition: .5s;
+transform: scale(0.999);
+background: white;
+animation: animate .4s;
+}
+@keyframes animate {
+100%{
+transform: scale(0.8);
+}
+}
+
+.content-slide .numberslide{
+    color: #ffffff;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration:  1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from{
+        opacity: -4;
+    }
+
+    to{
+        opacity: 1;
+    }
+}
+
+@keyframes fade{
+    from{
+        opacity: -4;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.container .page {
     text-align: center;
+    padding-top: 20px;
+}
+
+.page .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    display: inline-block;
+    transition: backgroundd-color 0.6s ease;
+    border-radius:  50%;
+}
+
+.page .active,
+.page .dot:hover{
+    background-color: #717171;
 }
